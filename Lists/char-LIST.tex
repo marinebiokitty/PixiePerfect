@@ -96,7 +96,7 @@
 %% \mf{<masculine>}{<feminine>}
 %% \pronoun{<command>}{<masculine>}{<feminine>}{<neuter>}
 \def\male{0}\def\female{1}\def\nonbinary{2}\def\Neo{3}
-\newcommand{\mfnN}[4]{\ifcase\MYsex#1\or#2\or#3\else#4\fi}
+%\newcommand{\mfnN}[4]{\ifcase\MYsex#1\or#2\or#3\else#4\fi}
 \newcommand{\mfn}[3]{\ifcase\MYsex#1\or#2\or#3\else#4\fi}
 \newcommand{\mf}[2]{\mfn{#1}{#2}{}}
 \newcommand{\pronoun}[4]{\def#1{\mfn{#2}{#3}{#4}}}
@@ -231,14 +231,13 @@
 %%%%%%%%%%%%% The PCS %%%%%%%%%%%%%%%
 
 %%%%%%%%%%%%% CoS %%%%%%%%%%%%%%%
-\NEW{PC}{\cLibAssist}{
+\NEW{PC}{\cSHead}{
   \s\MYname	{} 
-	\s\MYlast {}
-  \s\MYfile	{}
+  \s\MYfile	{S_Head.tex}
   \s\MYnumber	{}
   \s\MYdesc	{}
   \s\MYsex	{\female}
-	\s\MYCharpronouns	{}
+  \s\MYCharpronouns	{}
   \s\MYplayer	{}
   
   \s\MYblues	{}
@@ -247,7 +246,349 @@
   \s\MYitems	{}
   \s\MYwhites	{}
   
-  \s\MYcourt {0} % Which Court
+  \s\MYcourt {Structure} % Which Court
+}
+
+\NEW{PC}{\cSAdvisor}{
+  \s\MYname	{} 
+  \s\MYfile	{S_Advisor.tex}
+  \s\MYnumber	{}
+  \s\MYdesc	{}
+  \s\MYsex	{\female}
+  \s\MYCharpronouns	{}
+  \s\MYplayer	{}
+  
+  \s\MYblues	{}
+  \s\MYgreens	{}
+  \s\MYabils	{}
+  \s\MYitems	{}
+  \s\MYwhites	{}
+  
+  \s\MYcourt {Structure} % Which Court
+}
+
+\NEW{PC}{\cSPM}{
+  \s\MYname	{} 
+  \s\MYfile	{S_PM.tex}
+  \s\MYnumber	{}
+  \s\MYdesc	{}
+  \s\MYsex	{\male}
+  \s\MYCharpronouns	{}
+  \s\MYplayer	{}
+  
+  \s\MYblues	{}
+  \s\MYgreens	{}
+  \s\MYabils	{}
+  \s\MYitems	{}
+  \s\MYwhites	{}
+  
+  \s\MYcourt {Structure} % Which Court
+}
+
+\NEW{PC}{\cSHelp}{
+  \s\MYname	{} 
+  \s\MYfile	{S_Help.tex}
+  \s\MYnumber	{}
+  \s\MYdesc	{}
+  \s\MYsex	{\female}
+  \s\MYCharpronouns	{}
+  \s\MYplayer	{}
+  
+  \s\MYblues	{}
+  \s\MYgreens	{}
+  \s\MYabils	{}
+  \s\MYitems	{}
+  \s\MYwhites	{}
+  
+  \s\MYcourt {Structure} % Which Court
+}
+
+\NEW{PC}{\cSLibrarian}{
+  \s\MYname	{} 
+  \s\MYfile	{S_Lib.tex}
+  \s\MYnumber	{}
+  \s\MYdesc	{}
+  \s\MYsex	{\female}
+  \s\MYCharpronouns	{}
+  \s\MYplayer	{}
+  
+  \s\MYblues	{}
+  \s\MYgreens	{}
+  \s\MYabils	{}
+  \s\MYitems	{}
+  \s\MYwhites	{}
+  
+  \s\MYcourt {Structure} % Which Court
+}
+
+\NEW{PC}{\cEHead}{
+  \s\MYname	{} 
+  \s\MYfile	{E_Head.tex}
+  \s\MYnumber	{}
+  \s\MYdesc	{}
+  \s\MYsex	{\female}
+  \s\MYCharpronouns	{}
+  \s\MYplayer	{}
+  
+  \s\MYblues	{}
+  \s\MYgreens	{}
+  \s\MYabils	{}
+  \s\MYitems	{}
+  \s\MYwhites	{}
+  
+  \s\MYcourt {Elements} % Which Court
+}
+
+\NEW{PC}{\cEAirship}{
+  \s\MYname	{} 
+  \s\MYfile	{E_AIrship.tex}
+  \s\MYnumber	{}
+  \s\MYdesc	{}
+  \s\MYsex	{\female}
+  \s\MYCharpronouns	{}
+  \s\MYplayer	{}
+  
+  \s\MYblues	{}
+  \s\MYgreens	{}
+  \s\MYabils	{}
+  \s\MYitems	{}
+  \s\MYwhites	{}
+  
+  \s\MYcourt {Elements} % Which Court
+}
+
+\NEW{PC}{\cELove}{
+  \s\MYname	{} 
+  \s\MYfile	{E_Love.tex}
+  \s\MYnumber	{}
+  \s\MYdesc	{}
+  \s\MYsex	{\female}
+  \s\MYCharpronouns	{}
+  \s\MYplayer	{}
+  
+  \s\MYblues	{}
+  \s\MYgreens	{}
+  \s\MYabils	{}
+  \s\MYitems	{}
+  \s\MYwhites	{}
+  
+  \s\MYcourt {Elements} % Which Court
+}
+
+\NEW{PC}{\cETitan}{
+  \s\MYname	{} 
+  \s\MYfile	{E_Titan.tex}
+  \s\MYnumber	{}
+  \s\MYdesc	{}
+  \s\MYsex	{\female}
+  \s\MYCharpronouns	{}
+  \s\MYplayer	{}
+  
+  \s\MYblues	{}
+  \s\MYgreens	{}
+  \s\MYabils	{}
+  \s\MYitems	{}
+  \s\MYwhites	{}
+  
+  \s\MYcourt {Elements} % Which Court
+}
+
+\NEW{PC}{\cESweet}{
+  \s\MYname	{} 
+  \s\MYfile	{E_Sweet.tex}
+  \s\MYnumber	{}
+  \s\MYdesc	{}
+  \s\MYsex	{\female}
+  \s\MYCharpronouns	{}
+  \s\MYplayer	{}
+  
+  \s\MYblues	{}
+  \s\MYgreens	{}
+  \s\MYabils	{}
+  \s\MYitems	{}
+  \s\MYwhites	{}
+  
+  \s\MYcourt {Elements} % Which Court
+}
+
+\NEW{PC}{\cFHead}{
+  \s\MYname	{} 
+  \s\MYfile	{F_Head.tex}
+  \s\MYnumber	{}
+  \s\MYdesc	{}
+  \s\MYsex	{\female}
+  \s\MYCharpronouns	{}
+  \s\MYplayer	{}
+  
+  \s\MYblues	{}
+  \s\MYgreens	{}
+  \s\MYabils	{}
+  \s\MYitems	{}
+  \s\MYwhites	{}
+  
+  \s\MYcourt {Flora & Fauna} % Which Court
+}
+
+\NEW{PC}{\cFButterfly}{
+  \s\MYname	{} 
+  \s\MYfile	{F_Butterfly.tex}
+  \s\MYnumber	{}
+  \s\MYdesc	{}
+  \s\MYsex	{\female}
+  \s\MYCharpronouns	{}
+  \s\MYplayer	{}
+  
+  \s\MYblues	{}
+  \s\MYgreens	{}
+  \s\MYabils	{}
+  \s\MYitems	{}
+  \s\MYwhites	{}
+  
+  \s\MYcourt {Flora & Fauna} % Which Court
+}
+
+\NEW{PC}{\cFTitan}{
+  \s\MYname	{} 
+  \s\MYfile	{F_Titan.tex}
+  \s\MYnumber	{}
+  \s\MYdesc	{}
+  \s\MYsex	{\female}
+  \s\MYCharpronouns	{}
+  \s\MYplayer	{}
+  
+  \s\MYblues	{}
+  \s\MYgreens	{}
+  \s\MYabils	{}
+  \s\MYitems	{}
+  \s\MYwhites	{}
+  
+  \s\MYcourt {Flora & Fauna} % Which Court
+}
+
+\NEW{PC}{\cFWanabe}{
+  \s\MYname	{} 
+  \s\MYfile	{F_Wanabe.tex}
+  \s\MYnumber	{}
+  \s\MYdesc	{}
+  \s\MYsex	{\female}
+  \s\MYCharpronouns	{}
+  \s\MYplayer	{}
+  
+  \s\MYblues	{}
+  \s\MYgreens	{}
+  \s\MYabils	{}
+  \s\MYitems	{}
+  \s\MYwhites	{}
+  
+  \s\MYcourt {Flora & Fauna} % Which Court
+}
+
+\NEW{PC}{\cFHeart}{
+  \s\MYname	{} 
+  \s\MYfile	{F_Heart.tex}
+  \s\MYnumber	{}
+  \s\MYdesc	{}
+  \s\MYsex	{\female}
+  \s\MYCharpronouns	{}
+  \s\MYplayer	{}
+  
+  \s\MYblues	{}
+  \s\MYgreens	{}
+  \s\MYabils	{}
+  \s\MYitems	{}
+  \s\MYwhites	{}
+  
+  \s\MYcourt {Flora & Fauna} % Which Court
+}
+
+\NEW{PC}{\cMHead}{
+  \s\MYname	{} 
+  \s\MYfile	{M_Head.tex}
+  \s\MYnumber	{}
+  \s\MYdesc	{}
+  \s\MYsex	{\female}
+  \s\MYCharpronouns	{}
+  \s\MYplayer	{}
+  
+  \s\MYblues	{}
+  \s\MYgreens	{}
+  \s\MYabils	{}
+  \s\MYitems	{}
+  \s\MYwhites	{}
+  
+  \s\MYcourt {Makers and Magic} % Which Court
+}
+
+\NEW{PC}{\cMTree}{
+  \s\MYname	{} 
+  \s\MYfile	{M_Tree.tex}
+  \s\MYnumber	{}
+  \s\MYdesc	{}
+  \s\MYsex	{\female}
+  \s\MYCharpronouns	{}
+  \s\MYplayer	{}
+  
+  \s\MYblues	{}
+  \s\MYgreens	{}
+  \s\MYabils	{}
+  \s\MYitems	{}
+  \s\MYwhites	{}
+  
+  \s\MYcourt {Makers and Magic} % Which Court
+}
+
+\NEW{PC}{\cMChange}{
+  \s\MYname	{} 
+  \s\MYfile	{M_Change.tex}
+  \s\MYnumber	{}
+  \s\MYdesc	{}
+  \s\MYsex	{\female}
+  \s\MYCharpronouns	{}
+  \s\MYplayer	{}
+  
+  \s\MYblues	{}
+  \s\MYgreens	{}
+  \s\MYabils	{}
+  \s\MYitems	{}
+  \s\MYwhites	{}
+  
+  \s\MYcourt {Makers and Magic} % Which Court
+}
+
+\NEW{PC}{\cMAirship}{
+  \s\MYname	{} 
+  \s\MYfile	{M_Airship.tex}
+  \s\MYnumber	{}
+  \s\MYdesc	{}
+  \s\MYsex	{\female}
+  \s\MYCharpronouns	{}
+  \s\MYplayer	{}
+  
+  \s\MYblues	{}
+  \s\MYgreens	{}
+  \s\MYabils	{}
+  \s\MYitems	{}
+  \s\MYwhites	{}
+  
+  \s\MYcourt {Makers and Magic} % Which Court
+}
+
+\NEW{PC}{\cMIron}{
+  \s\MYname	{} 
+  \s\MYfile	{M_Iron.tex}
+  \s\MYnumber	{}
+  \s\MYdesc	{}
+  \s\MYsex	{\female}
+  \s\MYCharpronouns	{}
+  \s\MYplayer	{}
+  
+  \s\MYblues	{}
+  \s\MYgreens	{}
+  \s\MYabils	{}
+  \s\MYitems	{}
+  \s\MYwhites	{}
+  
+  \s\MYcourt {Makers and Magic} % Which Court
 }
 
 
