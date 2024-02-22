@@ -95,9 +95,8 @@
 %% \mfn{<masculine>}{<feminine>}{<neuter>}
 %% \mf{<masculine>}{<feminine>}
 %% \pronoun{<command>}{<masculine>}{<feminine>}{<neuter>}
-\def\male{0}\def\female{1}\def\nonbinary{2}\def\Neo{3}
-%\newcommand{\mfnN}[4]{\ifcase\MYsex#1\or#2\or#3\else#4\fi}
-\newcommand{\mfn}[3]{\ifcase\MYsex#1\or#2\or#3\else#4\fi}
+\def\male{0}\def\female{1}\def\nonbinary{2}\def\ambiguous{3}
+\newcommand{\mfn}[3]{\ifcase\MYsex#1\or#2\or#3\else#1/#2\fi}
 \newcommand{\mf}[2]{\mfn{#1}{#2}{}}
 \newcommand{\pronoun}[4]{\def#1{\mfn{#2}{#3}{#4}}}
 
@@ -115,8 +114,8 @@
 \pronoun{\Theyare} 	{He is}{She is}{They are}
 
 \pronoun{\plural}	{s}{s}{}
-\pronoun{\pluralC}	{es}{es}{}
-\pronoun{\pluralY}	{ies}{ies}{y}
+\pronoun{\pluralc}	{es}{es}{}
+\pronoun{\pluraly}	{ies}{ies}{y}
 \pronoun{\are}	{is}{is}{are}
 \pronoun{\re}	{'s}{'s}{'re}
 \pronoun{\does}	{does}{does}{do}
@@ -426,7 +425,7 @@
   \s\MYitems	{}
   \s\MYwhites	{}
   
-  \s\MYcourt {Flora & Fauna} % Which Court
+  \s\MYcourt {Flora and Fauna} % Which Court
 }
 
 \NEW{PC}{\cFButterfly}{
@@ -444,7 +443,7 @@
   \s\MYitems	{}
   \s\MYwhites	{}
   
-  \s\MYcourt {Flora & Fauna} % Which Court
+  \s\MYcourt {Flora and Fauna} % Which Court
 }
 
 \NEW{PC}{\cFTitan}{
@@ -462,7 +461,7 @@
   \s\MYitems	{}
   \s\MYwhites	{}
   
-  \s\MYcourt {Flora & Fauna} % Which Court
+  \s\MYcourt {Flora and Fauna} % Which Court
 }
 
 \NEW{PC}{\cFWanabe}{
@@ -480,7 +479,7 @@
   \s\MYitems	{}
   \s\MYwhites	{}
   
-  \s\MYcourt {Flora & Fauna} % Which Court
+  \s\MYcourt {Flora and Fauna} % Which Court
 }
 
 \NEW{PC}{\cFHeart}{
@@ -498,7 +497,7 @@
   \s\MYitems	{}
   \s\MYwhites	{}
   
-  \s\MYcourt {Flora & Fauna} % Which Court
+  \s\MYcourt {Flora and Fauna} % Which Court
 }
 
 \NEW{PC}{\cMHead}{
@@ -592,3 +591,8 @@
 }
 
 
+%%%%%%%%%%%%%%%%%
+\NEW{NPC}{\cFLost}{
+  \s\MYname	{Cervus}   
+  \s\MYcourt {Flora and Fauna} % Which Court
+}
