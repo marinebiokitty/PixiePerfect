@@ -101,26 +101,26 @@
 \newcommand{\pronounz}[5]{\def#1{\mfnz{#2}{#3}{#4}{#5}}}
 \newcommand{\pronoun}[4]{\def#1{\mfn{#2}{#3}{#4}}}
 
-\pronounz{\they}		{he}{she}{they}{ze}
-\pronounz{\They}		{He}{She}{They}{Ze}
-\pronounz{\them}		{him}{her}{them}{zir}
-\pronounz{\Them}		{Him}{Her}{Them}{Zir}
-\pronounz{\their}	{his}{her}{their}{zir}
-\pronounz{\Their}	{His}{Her}{Their}{Zir}
-\pronounz{\theirs}	{his}{hers}{theirs}{zirs}
-\pronounz{\themself}	{himself}{herself}{themself}{zirself}
-\pronounz{\Themself}	{Himself}{Herself}{Themself}{Zirself}
+\pronounz{\they}		{he}{she}{they}{fae}
+\pronounz{\They}		{He}{She}{They}{Fae}
+\pronounz{\them}		{him}{her}{them}{faer}
+\pronounz{\Them}		{Him}{Her}{Them}{Faer}
+\pronounz{\their}	{his}{her}{their}{faer}
+\pronounz{\Their}	{His}{Her}{Their}{Faer}
+\pronounz{\theirs}	{his}{hers}{theirs}{faers}
+\pronounz{\themself}	{himself}{herself}{themself}{faerself}
+\pronounz{\Themself}	{Himself}{Herself}{Themself}{Faerself}
 \newcommand{\theyare}{\they \are}
 \newcommand{\Theyare}{\They \are}
 
-\pronounz{\plural}	{s}{s}{}{s}
-\pronounz{\plurals}	{es}{es}{}{es}
-\pronounz{\pluraly}	{ies}{ies}{y}{ies}
-\pronounz{\are}	{is}{is}{are}{is}
-\pronounz{\re}	{'s}{'s}{'re}{'s}
-\newcommand{\does}{do\verbes}
-\pronounz{\have}	{has}{has}{have}{has}
-\pronounz{\were}	{was}{was}{were}{was}
+\pronoun{\plural}	{s}{s}{}
+\pronoun{\plurals}	{es}{es}{}
+\pronoun{\pluraly}	{ies}{ies}{y}
+\pronoun{\are}	{is}{is}{are}
+\pronoun{\re}	{'s}{'s}{'re}
+\newcommand{\does}{do\plurals}
+\pronoun{\have}	{has}{has}{have}
+\pronoun{\were}	{was}{was}{were}
 
 \pronoun{\spouse}	{husband}{wife}{spouse}
 \pronoun{\Spouse}	{Husband}{Wife}{Spouse}
@@ -146,7 +146,7 @@
 \pronoun{\Person}	{Man}{Woman}{Person}
 \pronoun{\sex}		{male}{female}{nonbinary}
 \pronoun{\Sex}		{Male}{Female}{Nonbinary}
-\pronoun{\God}		{God}{Goddess}{Diety}
+\pronoun{\God}		{God}{Goddess}{Deity}
 \pronoun{\Deity}		{God}{Goddess}{Deity}
 \pronoun{\Majesty}		{King}{Queen}{Majesty}
 \pronoun{\Heir}		{Prince}{Princess}{Heir}
@@ -231,12 +231,12 @@
 
 %%%%%%%%%%%%% CoS %%%%%%%%%%%%%%%
 \NEW{PC}{\cSHead}{
-  \s\MYname	{Headz} 
+  \s\MYname	{Calliope} 
   \s\MYfile	{S_Head.tex}
   \s\MYnumber	{}
   \s\MYdesc	{}
-  \s\MYCharpronouns	{\zezir}
-  \s\MYplayer	{}
+  \s\MYCharpronouns	{\sheher}
+  \s\MYplayer	{Dora}
   
   \s\MYblues	{}
   \s\MYgreens	{}
@@ -248,12 +248,13 @@
 }
 
 \NEW{PC}{\cSAdvisor}{
-  \s\MYname	{} 
+  \s\MYname	{Coda} 
   \s\MYfile	{S_Advisor.tex}
   \s\MYnumber	{}
   \s\MYdesc	{}
-  \s\MYCharpronouns	{\sheher}
+  \s\MYCharpronouns	{\theythem}
   \s\MYplayer	{}
+  \s\MYplayer	{Cam}
   
   \s\MYblues	{}
   \s\MYgreens	{}
@@ -265,12 +266,12 @@
 }
 
 \NEW{PC}{\cSPM}{
-  \s\MYname	{} 
+  \s\MYname	{Newt} 
   \s\MYfile	{S_PM.tex}
   \s\MYnumber	{}
   \s\MYdesc	{}
   \s\MYCharpronouns	{\hehim}
-  \s\MYplayer	{}
+  \s\MYplayer	{Aaron}
   
   \s\MYblues	{}
   \s\MYgreens	{}
@@ -282,12 +283,12 @@
 }
 
 \NEW{PC}{\cSHelp}{
-  \s\MYname	{} 
+  \s\MYname	{Maya} 
   \s\MYfile	{S_Help.tex}
   \s\MYnumber	{}
   \s\MYdesc	{}
   \s\MYCharpronouns	{\sheher}
-  \s\MYplayer	{}
+  \s\MYplayer	{Lorrie}
   
   \s\MYblues	{}
   \s\MYgreens	{}
@@ -299,12 +300,12 @@
 }
 
 \NEW{PC}{\cSLibrarian}{
-  \s\MYname	{} 
+  \s\MYname	{Lilian} 
   \s\MYfile	{S_Lib.tex}
   \s\MYnumber	{}
   \s\MYdesc	{}
-  \s\MYCharpronouns	{\sheher}
-  \s\MYplayer	{}
+  \s\MYCharpronouns	{\zezir}
+  \s\MYplayer	{Ember}
   
   \s\MYblues	{}
   \s\MYgreens	{}
@@ -316,12 +317,12 @@
 }
 
 \NEW{PC}{\cEHead}{
-  \s\MYname	{} 
+  \s\MYname	{Flicker} 
   \s\MYfile	{E_Head.tex}
   \s\MYnumber	{}
   \s\MYdesc	{}
   \s\MYCharpronouns	{\sheher}
-  \s\MYplayer	{}
+  \s\MYplayer	{Adina}
   
   \s\MYblues	{}
   \s\MYgreens	{}
@@ -333,12 +334,12 @@
 }
 
 \NEW{PC}{\cEAirship}{
-  \s\MYname	{} 
-  \s\MYfile	{E_AIrship.tex}
+  \s\MYname	{Sparks} 
+  \s\MYfile	{E_Airship.tex}
   \s\MYnumber	{}
   \s\MYdesc	{}
-  \s\MYCharpronouns	{\sheher}
-  \s\MYplayer	{}
+  \s\MYCharpronouns	{\theythem}
+  \s\MYplayer	{James}
   
   \s\MYblues	{}
   \s\MYgreens	{}
@@ -350,12 +351,12 @@
 }
 
 \NEW{PC}{\cELove}{
-  \s\MYname	{} 
+  \s\MYname	{Tide} 
   \s\MYfile	{E_Love.tex}
   \s\MYnumber	{}
   \s\MYdesc	{}
-  \s\MYCharpronouns	{\sheher}
-  \s\MYplayer	{}
+  \s\MYCharpronouns	{\hehim}
+  \s\MYplayer	{Stefan}
   
   \s\MYblues	{}
   \s\MYgreens	{}
@@ -367,12 +368,12 @@
 }
 
 \NEW{PC}{\cETitan}{
-  \s\MYname	{} 
+  \s\MYname	{Geode} 
   \s\MYfile	{E_Titan.tex}
   \s\MYnumber	{}
   \s\MYdesc	{}
-  \s\MYCharpronouns	{\sheher}
-  \s\MYplayer	{}
+  \s\MYCharpronouns	{\hehim}
+  \s\MYplayer	{Trevor}
   
   \s\MYblues	{}
   \s\MYgreens	{}
@@ -384,12 +385,12 @@
 }
 
 \NEW{PC}{\cESweet}{
-  \s\MYname	{} 
+  \s\MYname	{Dapple} 
   \s\MYfile	{E_Sweet.tex}
   \s\MYnumber	{}
   \s\MYdesc	{}
-  \s\MYCharpronouns	{\sheher}
-  \s\MYplayer	{}
+  \s\MYCharpronouns	{\zezir}
+  \s\MYplayer	{Deryn}
   
   \s\MYblues	{}
   \s\MYgreens	{}
@@ -401,12 +402,12 @@
 }
 
 \NEW{PC}{\cFHead}{
-  \s\MYname	{} 
+  \s\MYname	{Dahlia} 
   \s\MYfile	{F_Head.tex}
   \s\MYnumber	{}
   \s\MYdesc	{}
   \s\MYCharpronouns	{\sheher}
-  \s\MYplayer	{}
+  \s\MYplayer	{Courtney}
   
   \s\MYblues	{}
   \s\MYgreens	{}
@@ -418,12 +419,12 @@
 }
 
 \NEW{PC}{\cFButterfly}{
-  \s\MYname	{} 
+  \s\MYname	{Chrysa} 
   \s\MYfile	{F_Butterfly.tex}
   \s\MYnumber	{}
   \s\MYdesc	{}
   \s\MYCharpronouns	{\sheher}
-  \s\MYplayer	{}
+  \s\MYplayer	{Sky}
   
   \s\MYblues	{}
   \s\MYgreens	{}
@@ -435,12 +436,12 @@
 }
 
 \NEW{PC}{\cFTitan}{
-  \s\MYname	{} 
+  \s\MYname	{Cottontail} 
   \s\MYfile	{F_Titan.tex}
   \s\MYnumber	{}
   \s\MYdesc	{}
-  \s\MYCharpronouns	{\sheher}
-  \s\MYplayer	{}
+  \s\MYCharpronouns	{\hehim}
+  \s\MYplayer	{William}
   
   \s\MYblues	{}
   \s\MYgreens	{}
@@ -452,12 +453,12 @@
 }
 
 \NEW{PC}{\cFWanabe}{
-  \s\MYname	{} 
+  \s\MYname	{Anita} 
   \s\MYfile	{F_Wanabe.tex}
   \s\MYnumber	{}
   \s\MYdesc	{}
   \s\MYCharpronouns	{\sheher}
-  \s\MYplayer	{}
+  \s\MYplayer	{Erika}
   
   \s\MYblues	{}
   \s\MYgreens	{}
@@ -469,12 +470,12 @@
 }
 
 \NEW{PC}{\cFHeart}{
-  \s\MYname	{} 
+  \s\MYname	{Briar Thistledown} 
   \s\MYfile	{F_Heart.tex}
   \s\MYnumber	{}
   \s\MYdesc	{}
-  \s\MYCharpronouns	{\sheher}
-  \s\MYplayer	{}
+  \s\MYCharpronouns	{\theythem}
+  \s\MYplayer	{Alex}
   
   \s\MYblues	{}
   \s\MYgreens	{}
@@ -486,12 +487,12 @@
 }
 
 \NEW{PC}{\cMHead}{
-  \s\MYname	{} 
+  \s\MYname	{Azura} 
   \s\MYfile	{M_Head.tex}
   \s\MYnumber	{}
   \s\MYdesc	{}
   \s\MYCharpronouns	{\sheher}
-  \s\MYplayer	{}
+  \s\MYplayer	{Laurie}
   
   \s\MYblues	{}
   \s\MYgreens	{}
@@ -503,12 +504,12 @@
 }
 
 \NEW{PC}{\cMTree}{
-  \s\MYname	{} 
+  \s\MYname	{Nova} 
   \s\MYfile	{M_Tree.tex}
   \s\MYnumber	{}
   \s\MYdesc	{}
   \s\MYCharpronouns	{\sheher}
-  \s\MYplayer	{}
+  \s\MYplayer	{Michelle}
   
   \s\MYblues	{}
   \s\MYgreens	{}
@@ -520,12 +521,12 @@
 }
 
 \NEW{PC}{\cMChange}{
-  \s\MYname	{} 
+  \s\MYname	{Patchwork} 
   \s\MYfile	{M_Change.tex}
   \s\MYnumber	{}
   \s\MYdesc	{}
-  \s\MYCharpronouns	{\sheher}
-  \s\MYplayer	{}
+  \s\MYCharpronouns	{\hehim}
+  \s\MYplayer	{Rick}
   
   \s\MYblues	{}
   \s\MYgreens	{}
@@ -537,12 +538,12 @@
 }
 
 \NEW{PC}{\cMAirship}{
-  \s\MYname	{} 
+  \s\MYname	{Gadgets} 
   \s\MYfile	{M_Airship.tex}
   \s\MYnumber	{}
   \s\MYdesc	{}
   \s\MYCharpronouns	{\sheher}
-  \s\MYplayer	{}
+  \s\MYplayer	{Jessica}
   
   \s\MYblues	{}
   \s\MYgreens	{}
@@ -554,12 +555,12 @@
 }
 
 \NEW{PC}{\cMIron}{
-  \s\MYname	{} 
+  \s\MYname	{Freya} 
   \s\MYfile	{M_Iron.tex}
   \s\MYnumber	{}
   \s\MYdesc	{}
   \s\MYCharpronouns	{\sheher}
-  \s\MYplayer	{}
+  \s\MYplayer	{Lauren}
   
   \s\MYblues	{}
   \s\MYgreens	{}
