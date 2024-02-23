@@ -12,7 +12,7 @@
 %%
 %%
 %%
-%% \MYCharpronouns is set to either \male, \female, \neuter, or \ambiguous, as
+%% \MYCharpronouns is set to either \hehim, \sheher, \neuter, or \ambiguous, as
 %% correct for the character.  \mfn{<masculine>}{<feminine>}{<neuter>}
 %% will produce the correct form based on the current value of \MYCharpronouns
 %% (\ambiguous will lead to <masculine>/<feminine>).  \mfn should only
@@ -71,8 +71,8 @@
 	\newstat\MYcr	{Combat Rating}{CR}{2} %% for DarkWater-style combat
 	\newstat\MYcourt	{Pixie Court}{PC}{} % Courts: Structure, F&F, Elements, M&M
 
-  \FD\MYCharpronouns	{} %% \male, \female, \neuter, \ambiguous
-  \FD\MYPlaypronouns	{} %% \male, \female, \neuter, \ambiguous
+  \FD\MYCharpronouns	{} %% \hehim, \sheher, \neuter, \ambiguous
+  \FD\MYPlaypronouns	{} %% \hehim, \sheher, \neuter, \ambiguous
 	\FD\MYrole	{} %% playerlist role
   \FD\MYgroupstr{} %% playerlist groupstring
   \FD\MYfile	{} %% character sheet filename (including .tex)
@@ -90,11 +90,11 @@
 %%%%%
 %% pronouns and similar gender-based macros
 %%
-%% \male, \female, \neuter, \ambiguous
+%% \hehim, \sheher, \neuter, \ambiguous
 %% \mfn{<masculine>}{<feminine>}{<neuter>}
 %% \mf{<masculine>}{<feminine>}
 %% \pronoun{<command>}{<masculine>}{<feminine>}{<neuter>}
-\def\male{0}\def\female{1}\def\nonbinary{2}\def\zezir{3}
+\def\hehim{0}\def\sheher{1}\def\theythem{2}\def\zezir{3}
 \newcommand{\mfnz}[4]{\ifcase\MYCharpronouns#1\or#2\or#3\else#4\fi}
 \newcommand{\mfn}[3]{\mfnz{#1}{#2}{#3}{#3}}
 \newcommand{\mf}[2]{\mfn{#1}{#2}{}}
@@ -214,7 +214,7 @@
   %\s\MYfile	{README.tex}
   %\s\MYnumber	{00000}
   %\s\MYdesc	{a test}
-  %\MYCharpronouns	{\male}
+  %\MYCharpronouns	{\hehim}
   %\s\MYplayer	{Test Player}
   %
   %\s\MYblues	{\bTest{}}
@@ -252,7 +252,7 @@
   \s\MYfile	{S_Advisor.tex}
   \s\MYnumber	{}
   \s\MYdesc	{}
-  \s\MYCharpronouns	{\female}
+  \s\MYCharpronouns	{\sheher}
   \s\MYplayer	{}
   
   \s\MYblues	{}
@@ -269,7 +269,7 @@
   \s\MYfile	{S_PM.tex}
   \s\MYnumber	{}
   \s\MYdesc	{}
-  \s\MYCharpronouns	{\male}
+  \s\MYCharpronouns	{\hehim}
   \s\MYplayer	{}
   
   \s\MYblues	{}
@@ -286,7 +286,7 @@
   \s\MYfile	{S_Help.tex}
   \s\MYnumber	{}
   \s\MYdesc	{}
-  \s\MYCharpronouns	{\female}
+  \s\MYCharpronouns	{\sheher}
   \s\MYplayer	{}
   
   \s\MYblues	{}
@@ -303,7 +303,7 @@
   \s\MYfile	{S_Lib.tex}
   \s\MYnumber	{}
   \s\MYdesc	{}
-  \s\MYCharpronouns	{\female}
+  \s\MYCharpronouns	{\sheher}
   \s\MYplayer	{}
   
   \s\MYblues	{}
@@ -320,7 +320,7 @@
   \s\MYfile	{E_Head.tex}
   \s\MYnumber	{}
   \s\MYdesc	{}
-  \s\MYCharpronouns	{\female}
+  \s\MYCharpronouns	{\sheher}
   \s\MYplayer	{}
   
   \s\MYblues	{}
@@ -337,7 +337,7 @@
   \s\MYfile	{E_AIrship.tex}
   \s\MYnumber	{}
   \s\MYdesc	{}
-  \s\MYCharpronouns	{\female}
+  \s\MYCharpronouns	{\sheher}
   \s\MYplayer	{}
   
   \s\MYblues	{}
@@ -354,7 +354,7 @@
   \s\MYfile	{E_Love.tex}
   \s\MYnumber	{}
   \s\MYdesc	{}
-  \s\MYCharpronouns	{\female}
+  \s\MYCharpronouns	{\sheher}
   \s\MYplayer	{}
   
   \s\MYblues	{}
@@ -371,7 +371,7 @@
   \s\MYfile	{E_Titan.tex}
   \s\MYnumber	{}
   \s\MYdesc	{}
-  \s\MYCharpronouns	{\female}
+  \s\MYCharpronouns	{\sheher}
   \s\MYplayer	{}
   
   \s\MYblues	{}
@@ -388,7 +388,7 @@
   \s\MYfile	{E_Sweet.tex}
   \s\MYnumber	{}
   \s\MYdesc	{}
-  \s\MYCharpronouns	{\female}
+  \s\MYCharpronouns	{\sheher}
   \s\MYplayer	{}
   
   \s\MYblues	{}
@@ -405,7 +405,7 @@
   \s\MYfile	{F_Head.tex}
   \s\MYnumber	{}
   \s\MYdesc	{}
-  \s\MYCharpronouns	{\female}
+  \s\MYCharpronouns	{\sheher}
   \s\MYplayer	{}
   
   \s\MYblues	{}
@@ -422,7 +422,7 @@
   \s\MYfile	{F_Butterfly.tex}
   \s\MYnumber	{}
   \s\MYdesc	{}
-  \s\MYCharpronouns	{\female}
+  \s\MYCharpronouns	{\sheher}
   \s\MYplayer	{}
   
   \s\MYblues	{}
@@ -439,7 +439,7 @@
   \s\MYfile	{F_Titan.tex}
   \s\MYnumber	{}
   \s\MYdesc	{}
-  \s\MYCharpronouns	{\female}
+  \s\MYCharpronouns	{\sheher}
   \s\MYplayer	{}
   
   \s\MYblues	{}
@@ -456,7 +456,7 @@
   \s\MYfile	{F_Wanabe.tex}
   \s\MYnumber	{}
   \s\MYdesc	{}
-  \s\MYCharpronouns	{\female}
+  \s\MYCharpronouns	{\sheher}
   \s\MYplayer	{}
   
   \s\MYblues	{}
@@ -473,7 +473,7 @@
   \s\MYfile	{F_Heart.tex}
   \s\MYnumber	{}
   \s\MYdesc	{}
-  \s\MYCharpronouns	{\female}
+  \s\MYCharpronouns	{\sheher}
   \s\MYplayer	{}
   
   \s\MYblues	{}
@@ -490,7 +490,7 @@
   \s\MYfile	{M_Head.tex}
   \s\MYnumber	{}
   \s\MYdesc	{}
-  \s\MYCharpronouns	{\female}
+  \s\MYCharpronouns	{\sheher}
   \s\MYplayer	{}
   
   \s\MYblues	{}
@@ -507,7 +507,7 @@
   \s\MYfile	{M_Tree.tex}
   \s\MYnumber	{}
   \s\MYdesc	{}
-  \s\MYCharpronouns	{\female}
+  \s\MYCharpronouns	{\sheher}
   \s\MYplayer	{}
   
   \s\MYblues	{}
@@ -524,7 +524,7 @@
   \s\MYfile	{M_Change.tex}
   \s\MYnumber	{}
   \s\MYdesc	{}
-  \s\MYCharpronouns	{\female}
+  \s\MYCharpronouns	{\sheher}
   \s\MYplayer	{}
   
   \s\MYblues	{}
@@ -541,7 +541,7 @@
   \s\MYfile	{M_Airship.tex}
   \s\MYnumber	{}
   \s\MYdesc	{}
-  \s\MYCharpronouns	{\female}
+  \s\MYCharpronouns	{\sheher}
   \s\MYplayer	{}
   
   \s\MYblues	{}
@@ -558,7 +558,7 @@
   \s\MYfile	{M_Iron.tex}
   \s\MYnumber	{}
   \s\MYdesc	{}
-  \s\MYCharpronouns	{\female}
+  \s\MYCharpronouns	{\sheher}
   \s\MYplayer	{}
   
   \s\MYblues	{}
