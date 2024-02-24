@@ -2,7 +2,7 @@
 %%
 %% This file sets up the Char, PC, NPC, and Name datatypes and creates
 %% macros for each.  These are for characters in the game.  Here you
-%% use the fields in Char to assign elements to each character.
+%% use the fields in Char to assign Court of Elements to each character.
 %%
 %%
 %%
@@ -69,7 +69,7 @@
 	\FD\MYdesc	{} %% badge description
 
 	%\newstat\MYcr	{Combat Rating}{CR}{2} %% for DarkWater-style combat
-	\newstat\MYcourt	{Pixie Court}{PC}{} % Courts: Structure, F&F, Elements, M&M
+	\newstat\MYcourt	{Pixie Court}{PC}{} % Courts: Structure, F&F, Court of Elements, M&M
 
   \FD\MYCharpronouns	{} %% \hehim, \sheher, \neuter, \ambiguous
   \FD\MYPlaypronouns	{} %% \hehim, \sheher, \neuter, \ambiguous
@@ -236,6 +236,7 @@
   \s\MYdesc	{}
   \s\MYCharpronouns	{\sheher}
   \s\MYplayer	{Dora}
+	\s\MYPlaypronouns	{She/Her} %% \hehim, \sheher, \neuter, 
   
   \s\MYblues	{\bNeverland{}}
   \s\MYgreens	{}
@@ -243,7 +244,7 @@
   \s\MYitems	{}
   \s\MYwhites	{}
   
-  \s\MYcourt {Structure} % Which Court
+  \s\MYcourt {Court of Structure} % Which Court
 }
 
 \NEW{PC}{\cSAdvisor}{
@@ -253,6 +254,7 @@
   \s\MYdesc	{}
   \s\MYCharpronouns	{\theythem}
   \s\MYplayer	{Cam}
+	\s\MYPlaypronouns	{He/Him}
   
   \s\MYblues	{\bNeverland{}}
   \s\MYgreens	{\gSwitch{}}
@@ -260,7 +262,7 @@
   \s\MYitems	{}
   \s\MYwhites	{}
   
-  \s\MYcourt {Structure} % Which Court
+  \s\MYcourt {Court of Structure} % Which Court
 }
 
 \NEW{PC}{\cSPM}{
@@ -270,6 +272,7 @@
   \s\MYdesc	{}
   \s\MYCharpronouns	{\hehim}
   \s\MYplayer	{Aaron}
+	\s\MYPlaypronouns	{He/Him}
   
   \s\MYblues	{\bNeverland{}}
   \s\MYgreens	{}
@@ -277,7 +280,7 @@
   \s\MYitems	{}
   \s\MYwhites	{}
   
-  \s\MYcourt {Structure} % Which Court
+  \s\MYcourt {Court of Structure} % Which Court
 }
 
 \NEW{PC}{\cSHelp}{
@@ -287,6 +290,7 @@
   \s\MYdesc	{}
   \s\MYCharpronouns	{\sheher}
   \s\MYplayer	{Lorrie}
+	\s\MYPlaypronouns	{She/Her}
   
   \s\MYblues	{\bNeverland{}}
   \s\MYgreens	{}
@@ -294,7 +298,7 @@
   \s\MYitems	{}
   \s\MYwhites	{}
   
-  \s\MYcourt {Structure} % Which Court
+  \s\MYcourt {Court of Structure} % Which Court
 }
 
 \NEW{PC}{\cSLibrarian}{
@@ -304,6 +308,7 @@
   \s\MYdesc	{}
   \s\MYCharpronouns	{\zezir}
   \s\MYplayer	{Ember}
+	\s\MYPlaypronouns	{Fae/Faer}
   
   \s\MYblues	{\bNeverland{}}
   \s\MYgreens	{\gPortal{}}
@@ -311,7 +316,7 @@
   \s\MYitems	{}
   \s\MYwhites	{}
   
-  \s\MYcourt {Structure} % Which Court
+  \s\MYcourt {Court of Structure} % Which Court
 }
 
 \NEW{PC}{\cEHead}{
@@ -321,6 +326,7 @@
   \s\MYdesc	{}
   \s\MYCharpronouns	{\sheher}
   \s\MYplayer	{Adina}
+	\s\MYPlaypronouns	{She/Her}
   
   \s\MYblues	{\bNeverland{}}
   \s\MYgreens	{\gSesons{}}
@@ -328,7 +334,7 @@
   \s\MYitems	{}
   \s\MYwhites	{}
   
-  \s\MYcourt {Elements} % Which Court
+  \s\MYcourt {Court of Elements} % Which Court
 }
 
 \NEW{PC}{\cEAirship}{
@@ -338,6 +344,7 @@
   \s\MYdesc	{}
   \s\MYCharpronouns	{\theythem}
   \s\MYplayer	{James}
+	\s\MYPlaypronouns	{He/Him}
   
   \s\MYblues	{\bNeverland{}}
   \s\MYgreens	{\gSesons{}\gAirship{}}
@@ -345,7 +352,7 @@
   \s\MYitems	{}
   \s\MYwhites	{}
   
-  \s\MYcourt {Elements} % Which Court
+  \s\MYcourt {Court of Elements} % Which Court
 }
 
 \NEW{PC}{\cELove}{
@@ -355,6 +362,7 @@
   \s\MYdesc	{}
   \s\MYCharpronouns	{\hehim}
   \s\MYplayer	{Stefan}
+	\s\MYPlaypronouns	{He/Him}
   
   \s\MYblues	{\bNeverland{}}
   \s\MYgreens	{\gSesons{}}
@@ -362,7 +370,7 @@
   \s\MYitems	{}
   \s\MYwhites	{}
   
-  \s\MYcourt {Elements} % Which Court
+  \s\MYcourt {Court of Elements} % Which Court
 }
 
 \NEW{PC}{\cETitan}{
@@ -372,6 +380,7 @@
   \s\MYdesc	{}
   \s\MYCharpronouns	{\hehim}
   \s\MYplayer	{Trevor}
+	\s\MYPlaypronouns	{He/Him}
   
   \s\MYblues	{\bNeverland{}}
   \s\MYgreens	{\gSesons{}\gTitan{}}
@@ -379,7 +388,7 @@
   \s\MYitems	{}
   \s\MYwhites	{}
   
-  \s\MYcourt {Elements} % Which Court
+  \s\MYcourt {Court of Elements} % Which Court
 }
 
 \NEW{PC}{\cESweet}{
@@ -389,6 +398,7 @@
   \s\MYdesc	{}
   \s\MYCharpronouns	{\zezir}
   \s\MYplayer	{Deryn}
+	\s\MYPlaypronouns	{They/Them}
   
   \s\MYblues	{\bNeverland{}}
   \s\MYgreens	{\gSesons{}\gPortal{}}
@@ -396,7 +406,7 @@
   \s\MYitems	{}
   \s\MYwhites	{}
   
-  \s\MYcourt {Elements} % Which Court
+  \s\MYcourt {Court of Elements} % Which Court
 }
 
 \NEW{PC}{\cFHead}{
@@ -406,6 +416,7 @@
   \s\MYdesc	{}
   \s\MYCharpronouns	{\sheher}
   \s\MYplayer	{Courtney}
+	\s\MYPlaypronouns	{She/Her}
   
   \s\MYblues	{\bNeverland{}}
   \s\MYgreens	{\gButterfly{}}
@@ -413,7 +424,7 @@
   \s\MYitems	{}
   \s\MYwhites	{}
   
-  \s\MYcourt {Flora and Fauna} % Which Court
+  \s\MYcourt {Court of Flora and Fauna} % Which Court
 }
 
 \NEW{PC}{\cFButterfly}{
@@ -423,6 +434,7 @@
   \s\MYdesc	{}
   \s\MYCharpronouns	{\sheher}
   \s\MYplayer	{Sky}
+	\s\MYPlaypronouns	{She/Her}
   
   \s\MYblues	{\bNeverland{}}
   \s\MYgreens	{\gButterfly{}}
@@ -430,7 +442,7 @@
   \s\MYitems	{}
   \s\MYwhites	{}
   
-  \s\MYcourt {Flora and Fauna} % Which Court
+  \s\MYcourt {Court of Flora and Fauna} % Which Court
 }
 
 \NEW{PC}{\cFTitan}{
@@ -440,6 +452,7 @@
   \s\MYdesc	{}
   \s\MYCharpronouns	{\hehim}
   \s\MYplayer	{William}
+	\s\MYPlaypronouns	{He/Him}
   
   \s\MYblues	{\bNeverland{}}
   \s\MYgreens	{\gButterfly{}\gTitan{}}
@@ -447,7 +460,7 @@
   \s\MYitems	{}
   \s\MYwhites	{}
   
-  \s\MYcourt {Flora and Fauna} % Which Court
+  \s\MYcourt {Court of Flora and Fauna} % Which Court
 }
 
 \NEW{PC}{\cFWanabe}{
@@ -457,6 +470,7 @@
   \s\MYdesc	{}
   \s\MYCharpronouns	{\sheher}
   \s\MYplayer	{Erika}
+	\s\MYPlaypronouns	{She/Her}
   
   \s\MYblues	{\bNeverland{}}
   \s\MYgreens	{\gButterfly{}\gSwitch{}}
@@ -464,7 +478,7 @@
   \s\MYitems	{}
   \s\MYwhites	{}
   
-  \s\MYcourt {Flora and Fauna} % Which Court
+  \s\MYcourt {Court of Flora and Fauna} % Which Court
 }
 
 \NEW{PC}{\cFHeart}{
@@ -474,6 +488,7 @@
   \s\MYdesc	{}
   \s\MYCharpronouns	{\theythem}
   \s\MYplayer	{Alex}
+	\s\MYPlaypronouns	{They/Them}
   
   \s\MYblues	{\bNeverland{}}
   \s\MYgreens	{\gButterfly{}\gPortal{}}
@@ -481,7 +496,7 @@
   \s\MYitems	{}
   \s\MYwhites	{}
   
-  \s\MYcourt {Flora and Fauna} % Which Court
+  \s\MYcourt {Court of Flora and Fauna} % Which Court
 }
 
 \NEW{PC}{\cMHead}{
@@ -491,6 +506,7 @@
   \s\MYdesc	{}
   \s\MYCharpronouns	{\sheher}
   \s\MYplayer	{Laurie}
+	\s\MYPlaypronouns	{She/Her}
   
   \s\MYblues	{\bNeverland{}}
   \s\MYgreens	{}
@@ -498,7 +514,7 @@
   \s\MYitems	{}
   \s\MYwhites	{}
   
-  \s\MYcourt {Makers and Magic} % Which Court
+  \s\MYcourt {Court of Makers and Magic} % Which Court
 }
 
 \NEW{PC}{\cMTree}{
@@ -508,6 +524,7 @@
   \s\MYdesc	{}
   \s\MYCharpronouns	{\sheher}
   \s\MYplayer	{Michelle}
+	\s\MYPlaypronouns	{She/Her}
   
   \s\MYblues	{\bNeverland{}}
   \s\MYgreens	{}
@@ -515,7 +532,7 @@
   \s\MYitems	{}
   \s\MYwhites	{}
   
-  \s\MYcourt {Makers and Magic} % Which Court
+  \s\MYcourt {Court of Makers and Magic} % Which Court
 }
 
 \NEW{PC}{\cMChange}{
@@ -525,6 +542,7 @@
   \s\MYdesc	{}
   \s\MYCharpronouns	{\hehim}
   \s\MYplayer	{Rick}
+	\s\MYPlaypronouns	{They/Them}
   
   \s\MYblues	{\bNeverland{}}
   \s\MYgreens	{\gSwitch{}}
@@ -532,7 +550,7 @@
   \s\MYitems	{\iMudCase{}}
   \s\MYwhites	{}
   
-  \s\MYcourt {Makers and Magic} % Which Court
+  \s\MYcourt {Court of Makers and Magic} % Which Court
 }
 
 \NEW{PC}{\cMAirship}{
@@ -542,6 +560,7 @@
   \s\MYdesc	{}
   \s\MYCharpronouns	{\sheher}
   \s\MYplayer	{Jessica}
+	\s\MYPlaypronouns	{She/Her}
   
   \s\MYblues	{\bNeverland{}}
   \s\MYgreens	{\gAirship{}}
@@ -549,7 +568,7 @@
   \s\MYitems	{}
   \s\MYwhites	{}
   
-  \s\MYcourt {Makers and Magic} % Which Court
+  \s\MYcourt {Court of Makers and Magic} % Which Court
 }
 
 \NEW{PC}{\cMIron}{
@@ -559,6 +578,7 @@
   \s\MYdesc	{}
   \s\MYCharpronouns	{\sheher}
   \s\MYplayer	{Lauren}
+	\s\MYPlaypronouns	{She/Her}
   
   \s\MYblues	{\bNeverland{}}
   \s\MYgreens	{\gPortal{}}
@@ -566,7 +586,7 @@
   \s\MYitems	{}
   \s\MYwhites	{}
   
-  \s\MYcourt {Makers and Magic} % Which Court
+  \s\MYcourt {Court of Makers and Magic} % Which Court
 }
 
 
@@ -574,5 +594,5 @@
 \NEW{NPC}{\cFLost}{
   \s\MYname	{Cervus}  
 	\s\MYCharpronouns {\theythem}
-  \s\MYcourt {Flora and Fauna} % Which Court
+  \s\MYcourt {Court of Flora and Fauna} % Which Court
 }

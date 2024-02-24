@@ -108,7 +108,7 @@
 %% and for badges without descriptions:
 %%
 %%   \def\badgemap{{\MYname}{\MYnumber}{\MYplayer}{\unskip}}
-\def\badgemap{{\MYname}{\They/\Them}{\MYplayer}{\MYcourt}{\MYPlaypronouns}}
+\def\badgemap{{\MYname}{\MYnumber}{\MYplayer}{\MYdesc}{\they/\them}{\MYPlaypronouns}{\MYlast}}
 
 
 %%%%%

@@ -4907,15 +4907,14 @@
 %% \NameBadge{field1}{field2}{field3}{field4}
 %% \GMbadge{name}
 %%% \Observer
-\newcommand{\NameBadge}[7]{%
+\newcommand{\NameBadge}[5]{%
   \begingroup%
     \doublecard%
       {\light@badge{%
-        {\huge         \textbf{#1}}\\ %\vfil%
-				{\Large        #7} {\Large (#5)}\vfil%
+        {\Huge         \textbf{#1} (#2)}\\ %\vfil%
+				{\Large        #3 (#5) } \vfil%
         %{\bfseries\LARGE #2}\vfil%
         {\Large \textbf{\emph{#4}}}\vfil
-				{\large \emph{#3 (#6)}} \hfill {\Large \textbf{\##2}}%\vfil%
 				}
 			}%
       {\badge@note}%
