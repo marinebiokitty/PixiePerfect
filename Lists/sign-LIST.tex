@@ -189,3 +189,31 @@
 	\end{enumerate}
 	}
 }
+
+\newcommand{\resourcestation}[3]{
+	\NEW{Sign}{#1}{
+		\s\MYname{Resource Station for #2}
+		\s\MYloc{}
+		\s\MYtext{
+			At any point, \textbf{any character} from #2 can approach this station.  If they do so and the timer is not running or finished running, they may restart the timer and take #3.  If they do so and the timer is still running, they must come back another time.
+		}
+	}
+}
+
+\resourcestation{\sResourceStructure}{the Court of Structure}{two units of paper, both of which must be of the same kind: origami, construction, tissue, or round white circles}
+\resourcestation{\sResourceFF}{the Court of Flora and Fauna}{either one stamp and one stamp pad, or five leaf stickers}
+\resourcestation{\sResourceMakers}{Makers}{either three units of pipe cleaners, or three cotton balls}
+\NEW{Sign}{\sResourceMagic}{
+	\s\MYname{Resource Station for Magic}
+	\s\MYloc{}
+	\s\MYtext{
+		At any point, \textbf{any character} who is a Magic pixie (of the Court of Makers and Magic) can take any quantity of pixie dust from storage.
+	}
+}
+\NEW{Sign}{\sResourceElements}{
+	\s\MYname{Resource Station for the Court of Elements}
+	\s\MYloc{}
+	\s\MYtext{
+		At any point, \textbf{any character} from the Court of Elements can take pens, glue, and scissors from this station.
+	}
+}
